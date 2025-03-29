@@ -1,0 +1,40 @@
+{
+    "<p>Amateur art historian and author of <em>Dictionary of Symbols in Eastern and Western Art</em>.": [],
+    "Hall worked in various aspect of book publishing between 1946-72.": [
+        [
+            15,
+            29,
+            [
+                "various aspects"
+            ]
+        ]
+    ],
+    "In 1972 he became a the director of book production services company.": [
+        [
+            3,
+            7,
+            [
+                "1972,"
+            ]
+        ],
+        [
+            18,
+            23,
+            [
+                "a",
+                "the"
+            ]
+        ]
+    ],
+    "His most famous book, a Dictionary of Subject and Symbols in Art first appeared in 1974.": [],
+    "The book was subsequently translated into many eastern and western languages.": [],
+    "In 2005 he published a biography of Michelangelo.</p>": [
+        [
+            3,
+            7,
+            [
+                "2005,"
+            ]
+        ]
+    ]
+}

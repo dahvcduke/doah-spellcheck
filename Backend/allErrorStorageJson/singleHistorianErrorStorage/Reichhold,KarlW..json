@@ -1,0 +1,28 @@
+{
+    "<p>Archaeologist and historian of classical vase painting.": [],
+    "In 1900 he and <a href=\"/furtwanglera\">Adolf Furtw\u00e4ngler</a> renewed the excavations at the temple of Aphaia in Aigina.": [
+        [
+            3,
+            7,
+            [
+                "1900,"
+            ]
+        ]
+    ],
+    "Reichhold and Furtw\u00e4ngler's <em>Griechische Vasenmalerei</em> raised the standard for accurate drawings of vase paintings to an exceptional level.</p>": [
+        [
+            0,
+            9,
+            [
+                "Reich hold"
+            ]
+        ],
+        [
+            14,
+            25,
+            [
+                "Furtwangler"
+            ]
+        ]
+    ]
+}

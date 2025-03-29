@@ -1,0 +1,64 @@
+{
+    "<p>Curator of European Painting, Metropolitan Museum of Art.": [],
+    "Wehle was the nephew of Supreme Court Justice Louis Brandeis.": [
+        [
+            0,
+            5,
+            [
+                "Were",
+                "Well",
+                "Where",
+                "While",
+                "Whole",
+                "Wheel"
+            ]
+        ]
+    ],
+    "As an undergraduate at Harvard, Wehle took the famous 'Museum Course\" lead by <a href=\"/sachsp\">Paul J. Sachs</a>, He graduated from Harvard in 1911.": [
+        [
+            32,
+            37,
+            [
+                "Were",
+                "Well",
+                "Where",
+                "While",
+                "Whole",
+                "Wheel"
+            ]
+        ]
+    ],
+    "He was appointed curator in 1918.": [],
+    "Under his tenure, the collections of Bache, Griggs, Havemeyer and Lewisohn came to the Met.": [
+        [
+            37,
+            42,
+            [
+                "Cache",
+                "Bach",
+                "Bathe",
+                "Ache"
+            ]
+        ],
+        [
+            52,
+            61,
+            [
+                "Homemaker",
+                "Pacemaker",
+                "Caveman",
+                "Ratepayer",
+                "Hammerer",
+                "Heineman"
+            ]
+        ],
+        [
+            66,
+            74,
+            [
+                "Lewiston"
+            ]
+        ]
+    ],
+    "He retired as curator of European Painting in 1948, succeeded by <a href=\"/rousseaut\">Theodore Rousseau, Jr.</a>, but retained the title curator of collections until 1953.</p>": []
+}

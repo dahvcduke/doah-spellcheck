@@ -1,0 +1,21 @@
+{
+    "<p>Baroque/rococco scholar.": [
+        [
+            11,
+            18,
+            [
+                "rococo"
+            ]
+        ]
+    ],
+    "Michalski was the assistant to <a href=\"/pinderw\">Wilhelm Pinder</a> who, when the Nazis took over in 1933, was forced to leave his position because he was a Jew.</p>": [
+        [
+            0,
+            9,
+            [
+                "Michelson",
+                "Michelsen"
+            ]
+        ]
+    ]
+}

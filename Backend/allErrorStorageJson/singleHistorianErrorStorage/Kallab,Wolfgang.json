@@ -1,0 +1,40 @@
+{
+    "<p>Vasari scholar of Vienna school.": [
+        [
+            3,
+            9,
+            [
+                "Va sari"
+            ]
+        ]
+    ],
+    "He was born in&nbsp;Prostejov, Czechoslovakia, which is present-day Prost\u011bjov, Czech Republic.</p>": [
+        [
+            12,
+            19,
+            [
+                "inns",
+                "INBS",
+                "INSP",
+                "inanest",
+                "&nbsp;"
+            ]
+        ],
+        [
+            20,
+            29,
+            [
+                "Rostov",
+                "Prospero"
+            ]
+        ],
+        [
+            68,
+            77,
+            [
+                "Rostov",
+                "Prospero"
+            ]
+        ]
+    ]
+}

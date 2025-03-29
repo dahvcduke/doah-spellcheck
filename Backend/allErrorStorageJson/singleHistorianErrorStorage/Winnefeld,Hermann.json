@@ -1,0 +1,60 @@
+{
+    "<p>Specialist in ancient Greece.": [
+        [
+            17,
+            31,
+            [
+                "Ancient Greece"
+            ]
+        ]
+    ],
+    "Worked at the Kgl.": [
+        [
+            14,
+            17,
+            [
+                "Kg",
+                "KGB",
+                "KGO",
+                "AGL",
+                "BGL",
+                "CGL"
+            ]
+        ]
+    ],
+    "Kunstsammlungen in Berlin most of his life, \"Zweite Direktor\" from 1907-1918.": [
+        [
+            45,
+            51,
+            [
+                "State",
+                "White",
+                "Wear",
+                "Write",
+                "Aware",
+                "Plate"
+            ]
+        ],
+        [
+            52,
+            60,
+            [
+                "Director"
+            ]
+        ]
+    ],
+    "Winnefeld wrote his dissertation under <a href=\"/duhnf\">Friedrich von Duhn</a> in Berlin.</p>": [
+        [
+            0,
+            9,
+            [
+                "Winfield",
+                "Minefield",
+                "Wintered",
+                "Bielefeld",
+                "Ninefold",
+                "Winnowed"
+            ]
+        ]
+    ]
+}

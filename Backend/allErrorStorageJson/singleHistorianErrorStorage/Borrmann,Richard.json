@@ -1,0 +1,25 @@
+{
+    "<p>Architect and archaeologist.": [],
+    "he was born in what was Germany and is now Graudenz, Poland.": [
+        [
+            0,
+            2,
+            [
+                "He"
+            ]
+        ],
+        [
+            43,
+            51,
+            [
+                "Garden",
+                "Grade",
+                "Gardens",
+                "Grades",
+                "Graded",
+                "Gradient"
+            ]
+        ]
+    ],
+    "His students included <a href=\"/zuckerp\">Paul Zucker</a>.</p>": []
+}

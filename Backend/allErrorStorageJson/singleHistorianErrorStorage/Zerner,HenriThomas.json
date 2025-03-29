@@ -1,0 +1,43 @@
+{
+    "<p>Curator, Prints, Fogg Museum, Harvard University.": [
+        [
+            20,
+            24,
+            [
+                "Fog",
+                "Foggy",
+                "Fogs",
+                "OGG",
+                "Fogy",
+                "Ogg"
+            ]
+        ]
+    ],
+    "Lic es Letters (1961), Doctor of Fine Arts from University of Paris (1969).": [
+        [
+            0,
+            3,
+            [
+                "LIC",
+                "Lie",
+                "Lid",
+                "Lip",
+                "Sic",
+                "Lin"
+            ]
+        ],
+        [
+            4,
+            6,
+            [
+                "ES",
+                "Es",
+                "is",
+                "as",
+                "us",
+                "yes"
+            ]
+        ]
+    ],
+    "Curator, Painting and Graphic Arts Museum, Prints and Drawing Museum, Rhode Island School of Design (1965-1972).</p>": []
+}

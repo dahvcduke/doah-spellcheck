@@ -1,0 +1,41 @@
+{
+    "historian of Portuguese art; studied at L'\u00e9cole des Hautes \u00e9tudes": [
+        [
+            0,
+            9,
+            [
+                "Historian"
+            ]
+        ],
+        [
+            42,
+            47,
+            [
+                "Cole",
+                "ecol"
+            ]
+        ],
+        [
+            48,
+            51,
+            [
+                "DES",
+                "yes",
+                "does",
+                "dies",
+                "desk",
+                "Del"
+            ]
+        ],
+        [
+            52,
+            58,
+            [
+                "Hates",
+                "Hastes",
+                "Saut\u00e9s",
+                "Sautes"
+            ]
+        ]
+    ]
+}

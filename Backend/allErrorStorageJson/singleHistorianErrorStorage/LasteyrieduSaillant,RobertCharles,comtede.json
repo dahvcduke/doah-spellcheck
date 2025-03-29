@@ -1,0 +1,37 @@
+{
+    "<p>Medieval archaeologist who helped establish a chronology for Romanesque monuments in France.": [],
+    "His students at the \u00e9cole des Chartes included <a href=\"/enlartc\">Camille Enlart</a> and <a href=\"/aubertm\">Marcel Aubert</a>.</p>": [
+        [
+            20,
+            25,
+            [
+                "Cole",
+                "ecol"
+            ]
+        ],
+        [
+            26,
+            29,
+            [
+                "DES",
+                "yes",
+                "does",
+                "dies",
+                "desk",
+                "Del"
+            ]
+        ],
+        [
+            30,
+            37,
+            [
+                "Charles",
+                "Charges",
+                "Charts",
+                "Charter",
+                "Charted",
+                "Charters"
+            ]
+        ]
+    ]
+}

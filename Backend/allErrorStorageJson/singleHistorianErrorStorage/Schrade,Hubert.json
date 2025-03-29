@@ -1,0 +1,42 @@
+{
+    "<p>Schrade was born in Allenstein, Germany which is present-day Olsztyn, Poland.": [
+        [
+            3,
+            10,
+            [
+                "Schrader"
+            ]
+        ],
+        [
+            23,
+            33,
+            [
+                "Wallenstein",
+                "Allen stein"
+            ]
+        ]
+    ],
+    "Schrade represents politically what <a href=\"/werckmeistero\">O.": [
+        [
+            0,
+            7,
+            [
+                "Schrader"
+            ]
+        ]
+    ],
+    "K. Werckmeister</a> termed the post-war bourgeois rehabilitation of previously Nazi art historians.": [],
+    "\"Suspended from office at the end of the war, [they] were later reappointed to imporatn chairs where a number of less outspoken fellow travelers [i.e., other art historians supporting the Reich] had simply continued in their posts.": [
+        [
+            79,
+            87,
+            [
+                "important",
+                "import",
+                "imports",
+                "Import"
+            ]
+        ]
+    ],
+    "\"</p>": []
+}

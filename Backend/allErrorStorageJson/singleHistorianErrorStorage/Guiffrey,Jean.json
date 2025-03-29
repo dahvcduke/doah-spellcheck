@@ -1,0 +1,63 @@
+{
+    "<p>Prud'hon scholar and curator Museum of Fine Arts, Boston and later conservator at the Mus\u00e9e du Louvre.": [
+        [
+            3,
+            7,
+            [
+                "Proud",
+                "Prod",
+                "Prut",
+                "Crud",
+                "Prude",
+                "CRUD"
+            ]
+        ]
+    ],
+    "In 1924 he authored the catalogue raissone on P. P. Prud'hon.": [
+        [
+            3,
+            7,
+            [
+                "1924,"
+            ]
+        ],
+        [
+            24,
+            33,
+            [
+                "catalog"
+            ]
+        ],
+        [
+            34,
+            42,
+            [
+                "caisson",
+                "caissons",
+                "Radisson",
+                "rissole"
+            ]
+        ],
+        [
+            52,
+            56,
+            [
+                "Proud",
+                "Prod",
+                "Prut",
+                "Crud",
+                "Prude",
+                "CRUD"
+            ]
+        ]
+    ],
+    "Guiffrey's two areas of specialty were French primitives and eighteenth-century French painting.</p>": [
+        [
+            0,
+            8,
+            [
+                "Geoffrey"
+            ]
+        ]
+    ]
+}

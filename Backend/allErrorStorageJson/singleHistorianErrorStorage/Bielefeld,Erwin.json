@@ -1,0 +1,48 @@
+{
+    "<p>Specialist in classical Greek and Roman art, particularly known for his focused interpretations and histories of single works of art.": [],
+    "Forced to leave his university studies in 1935 because of the Jewish heritage of his father, but remained in Germany and survived a forced labor camp (Organization Todt) in France to return to Germany and resume his studies.": [
+        [
+            164,
+            168,
+            [
+                "Todd",
+                "Tort",
+                "Tod",
+                "Tot",
+                "Tout",
+                "Toot"
+            ]
+        ]
+    ],
+    "After finishing his habilitation in 1947, began teaching at the University of Greifswald where he advanced to the rank of full professor in 1959.": [
+        [
+            20,
+            32,
+            [
+                "rehabilitation",
+                "habitation",
+                "facilitation",
+                "debilitation",
+                "habilitating"
+            ]
+        ]
+    ],
+    "Due to a publishing ban placed on him by the communist leadership in East Germany in 1958, Bielefeld and his family emigrated to Munich in 1960, where with the help of Ernst Hohmann-Wedeking he was able to work as an ausserplanm\u00e4\u00dfige Professor until 1974.</p>": [
+        [
+            116,
+            128,
+            [
+                "immigrated to",
+                "emigrated from"
+            ]
+        ],
+        [
+            174,
+            190,
+            [
+                "Johann-Wedeking",
+                "Hohmann-Wed eking"
+            ]
+        ]
+    ]
+}

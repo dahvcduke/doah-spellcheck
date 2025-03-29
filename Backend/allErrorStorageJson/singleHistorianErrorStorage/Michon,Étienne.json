@@ -1,0 +1,45 @@
+{
+    "<p>Classical art curator at the Louvre.": [],
+    "Michon graduated from the \u00c9cole normale sup\u00e9rieure in Paris where his classmate was the future art historian <a href=\"/jamotp\">Paul Jamot</a>.</p>": [
+        [
+            0,
+            6,
+            [
+                "Micron",
+                "Bichon",
+                "Mic hon",
+                "Mich on"
+            ]
+        ],
+        [
+            26,
+            31,
+            [
+                "Cole",
+                "Ecol"
+            ]
+        ],
+        [
+            32,
+            39,
+            [
+                "normal",
+                "Normal",
+                "nor male",
+                "norm ale"
+            ]
+        ],
+        [
+            40,
+            50,
+            [
+                "superior",
+                "superhero",
+                "Superior",
+                "superiors",
+                "supersede",
+                "superstore"
+            ]
+        ]
+    ]
+}

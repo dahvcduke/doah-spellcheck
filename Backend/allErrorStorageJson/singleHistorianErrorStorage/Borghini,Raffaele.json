@@ -1,0 +1,29 @@
+{
+    "<p>Wrote the celebrated, <em>Il riposo di Raffaele Borghini in cui della pittura e della scultura si favella, de' pi\u00f9 famose opere loro si fa menzione, e le cose principali appartenenti a dette arti s' insegnano</em> in 1584.": [],
+    "The fourth section contains important information on the artistic and cultural world of Florence.": [],
+    "Borghini relied mainly on Vasari, and is considered Vasari's successor.</p>": [
+        [
+            0,
+            8,
+            [
+                "Boffin",
+                "Barfing",
+                "Boffins"
+            ]
+        ],
+        [
+            26,
+            32,
+            [
+                "Va sari"
+            ]
+        ],
+        [
+            52,
+            58,
+            [
+                "Va sari"
+            ]
+        ]
+    ]
+}

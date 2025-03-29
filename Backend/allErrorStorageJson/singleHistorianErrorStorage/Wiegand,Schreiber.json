@@ -1,0 +1,57 @@
+{
+    "<p>Director of the Kunsth\u00fctte in Chemnitz (greater Dresden) in the 1920s.": [],
+    "A conservative, he questioned the inclusion of German Expressionist artists in the traveling \"Die neue Sachlichkeit\" show originating from the Mannheim Kunsthalle, organized by <a href=\"/hartlaubg\">Gustav Hartlaub</a>.": [
+        [
+            98,
+            102,
+            [
+                "nee",
+                "neut",
+                "n\u00e9e",
+                "NEE",
+                "n\u00e9v\u00e9"
+            ]
+        ],
+        [
+            152,
+            162,
+            [
+                "Unstable"
+            ]
+        ]
+    ],
+    "Wiegand felt the works in question were Bolshvistic.": [
+        [
+            0,
+            7,
+            [
+                "Ligand",
+                "Wideband",
+                "Wigan"
+            ]
+        ],
+        [
+            40,
+            51,
+            [
+                "Bolshevist"
+            ]
+        ]
+    ],
+    "His requesting that these works be eliminated was an early example of politcal art censorship in Germany which climaxed with the Nazi attacks on modern in in 1933-1937.</p>": [
+        [
+            70,
+            78,
+            [
+                "political"
+            ]
+        ],
+        [
+            152,
+            157,
+            [
+                "in"
+            ]
+        ]
+    ]
+}

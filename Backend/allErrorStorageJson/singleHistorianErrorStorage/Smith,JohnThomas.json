@@ -1,0 +1,22 @@
+{
+    "<p>Keeper of Prints and Drawings at the British Museum.": [],
+    "He was succeeded at his death by <a href=\"/ottleyw\">William Young Ottley</a>.": [],
+    "He is sometmes confused in historiographic literature with the <a href=\"/smithj\">John Smith</a> who authored the Rubens catalog in the 1830's.</p>": [
+        [
+            6,
+            14,
+            [
+                "sometimes"
+            ]
+        ],
+        [
+            27,
+            42,
+            [
+                "historiography",
+                "historiographical",
+                "historiographer"
+            ]
+        ]
+    ]
+}

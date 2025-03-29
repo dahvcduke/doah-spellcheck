@@ -1,0 +1,46 @@
+{
+    "founder of the Ecole Francaise in Rome at the Farnese Palace.": [
+        [
+            0,
+            7,
+            [
+                "Founder"
+            ]
+        ],
+        [
+            15,
+            20,
+            [
+                "Cole",
+                "Ecol"
+            ]
+        ],
+        [
+            21,
+            30,
+            [
+                "Franchise",
+                "Francoise",
+                "Fran\u00e7ais",
+                "Fran\u00e7oise"
+            ]
+        ],
+        [
+            46,
+            53,
+            [
+                "Faroese"
+            ]
+        ]
+    ],
+    "Dumont's Ecole attracted many students, among them <a href=\"/muntze\">Eugene M\u00fcntz</a>.": [
+        [
+            9,
+            14,
+            [
+                "Cole",
+                "Ecol"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "<p>Specialist in antique \"kleinkunst\" (smaller works of painting, ceramics and sculpture).": [
+        [
+            26,
+            36,
+            [
+                "leakiest",
+                "blankest"
+            ]
+        ]
+    ],
+    "Zahn wrote his dissertation in Berlin under <a href=\"/duhnf\">Friedrich von Duhn</a>.": [
+        [
+            0,
+            4,
+            [
+                "Hahn",
+                "AHN",
+                "Zayn"
+            ]
+        ]
+    ],
+    "Zahn spent his career at the the Antiquities Section of the Berliner Museum, serving as Second Director 1918-1931 and First Director 1931-1935 of the section.": [
+        [
+            0,
+            4,
+            [
+                "Hahn",
+                "AHN",
+                "Zayn"
+            ]
+        ],
+        [
+            25,
+            32,
+            [
+                "the"
+            ]
+        ]
+    ],
+    "He declined a call to Heidelberg University in 1920.": [],
+    "He was made Honorarprofessor at Berlin University 1928-1936.</p>": []
+}

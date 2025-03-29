@@ -1,0 +1,28 @@
+{
+    "wrote book of conversations with artists of Rome; d'Olland in Portugese?": [
+        [
+            0,
+            5,
+            [
+                "Wrote"
+            ]
+        ],
+        [
+            52,
+            58,
+            [
+                "Holland",
+                "Rolland",
+                "Orland",
+                "\u00d6land"
+            ]
+        ],
+        [
+            62,
+            71,
+            [
+                "Portuguese"
+            ]
+        ]
+    ]
+}

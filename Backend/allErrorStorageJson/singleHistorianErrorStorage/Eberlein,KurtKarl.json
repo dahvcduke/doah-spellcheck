@@ -1,0 +1,51 @@
+{
+    "<p>Berlin-trained art historian who became part of the Nazi-propanda machine.": [
+        [
+            55,
+            68,
+            [
+                "Nazi-pro panda"
+            ]
+        ]
+    ],
+    "Eberlein wrote his dissertation on the literary history of art writing in the eighteenth century.": [
+        [
+            0,
+            8,
+            [
+                "Eberle in"
+            ]
+        ]
+    ],
+    "In 1934 he issued one of the major manifesti for art theory for the Nazi s, <em>Was ist Deutsch in der deutschen Kunst?</em> (What's German in German Art?).": [
+        [
+            3,
+            7,
+            [
+                "1934,"
+            ]
+        ],
+        [
+            35,
+            44,
+            [
+                "manifest",
+                "manifesto",
+                "manifests"
+            ]
+        ]
+    ],
+    "He helped organize an art sales exhibition at the Berlin Nationalgalerie during the war in 1942, \"Grosse Berliner Kunstausstellung 1942\".</p>": [
+        [
+            98,
+            104,
+            [
+                "Gross",
+                "Grossed",
+                "Grouse",
+                "Grosser",
+                "Grosses"
+            ]
+        ]
+    ]
+}

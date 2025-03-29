@@ -1,0 +1,35 @@
+{
+    "<p>Professor of medieval art at the Universit\u00e9 de Paris 1; member of the internationalcouncil on monuments and sites, UNESCO (1980-2005).": [
+        [
+            73,
+            93,
+            [
+                "international council"
+            ]
+        ]
+    ],
+    "Pressouyre furthered the research of the Ch\u00e2lons-sur-Marne cloister fragments, a discovery orginally made by <a href=\"/sauerlanderw\">Willibald Sauerl\u00e4nder</a>.</p>": [
+        [
+            0,
+            10,
+            [
+                "Pressure"
+            ]
+        ],
+        [
+            41,
+            58,
+            [
+                "Chains-sur-Marne",
+                "Ch\u00e2lons-SUR-Marne"
+            ]
+        ],
+        [
+            91,
+            100,
+            [
+                "originally"
+            ]
+        ]
+    ]
+}

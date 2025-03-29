@@ -1,0 +1,63 @@
+{
+    "<p>Specialist in ancient Greek and Roman art, particularly vase painting and Greek wall painting.": [],
+    "Rumpf was the son of the artist Fritz Rumpf.": [
+        [
+            0,
+            5,
+            [
+                "Rump",
+                "Rumps",
+                "Rum pf"
+            ]
+        ],
+        [
+            38,
+            43,
+            [
+                "Rump",
+                "Rumps",
+                "Rum pf"
+            ]
+        ]
+    ],
+    "Rumpf was editor of the influential <em>Griechische und r\u00f6mische Kunst</em> (1932, part of the <em>Einleitung in der Altertumswissenschaft</em> series).": [
+        [
+            0,
+            5,
+            [
+                "Rump",
+                "Rumps",
+                "Rum pf"
+            ]
+        ]
+    ],
+    "Professor at the University of Cologne (Institut f\u00fcr Klassische Arch\u00ebologie) (1928-1960).": [
+        [
+            40,
+            48,
+            [
+                "Institute"
+            ]
+        ],
+        [
+            49,
+            52,
+            [
+                "fur",
+                "for",
+                "four",
+                "far",
+                "our",
+                "fun"
+            ]
+        ],
+        [
+            64,
+            75,
+            [
+                "Archeologies"
+            ]
+        ]
+    ],
+    "Upon his retirement in 1960 he was succeeded at the University at Cologne by <a href=\"/kahlerh\">Heinz K\u00e4hler</a>.</p>": []
+}

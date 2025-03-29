@@ -1,0 +1,15 @@
+{
+    "<p>Pauli initially studied under <a href=\"/springera\">Anton Springer</a> in Leipzig.": [],
+    "When Springer died in 1891, Pauli switched to Basel to study under <a href=\"/burckhardtj\">Jacob Burckhardt</a>.": [],
+    "Burchkardt understood well the enmity of Springer and reportedly told Pauli that Springer students were unteachable.</p>": [
+        [
+            0,
+            10,
+            [
+                "Bernhardt",
+                "Barchart",
+                "Burkhart"
+            ]
+        ]
+    ]
+}

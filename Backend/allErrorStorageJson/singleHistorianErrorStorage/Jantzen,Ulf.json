@@ -1,0 +1,93 @@
+{
+    "<p>Classical art historian and archaeologist; associated with the Nazis during the DAI in Athens.": [],
+    "Jantzen was the son of the medievalist art historian <a href=\"/jantzenh\">Hans Jantzen</a>.": [
+        [
+            0,
+            7,
+            [
+                "Canteen",
+                "Jansen",
+                "Janssen"
+            ]
+        ]
+    ],
+    "During the Nazi era in Germany, Jantzen was asssigned to the German Archaeological Institute (Deutsches Arch\u00e4ologisches Institut or DAI) under <a href=\"/wredew\">Walther Wrede</a>.": [
+        [
+            32,
+            39,
+            [
+                "Canteen",
+                "Jansen",
+                "Janssen"
+            ]
+        ],
+        [
+            44,
+            53,
+            [
+                "assigned",
+                "ass signed"
+            ]
+        ],
+        [
+            94,
+            103,
+            [
+                "Deutsche's",
+                "Deutsche"
+            ]
+        ],
+        [
+            120,
+            128,
+            [
+                "Institute"
+            ]
+        ]
+    ],
+    "He served there during the highly politicized years of the institute, working as a military official.": [],
+    "When Wrede left Greece during the German withdrawal from Greece in 1944, Janzten and <a href=\"/hamper\">Roland Hampe</a> remained behind to run the Institute.": [
+        [
+            5,
+            10,
+            [
+                "Were",
+                "Where",
+                "Free",
+                "Wrote",
+                "Red",
+                "Trade"
+            ]
+        ],
+        [
+            73,
+            80,
+            [
+                "Jansen",
+                "Janssen",
+                "Jazztel"
+            ]
+        ]
+    ],
+    "It was they who handed it over to the Greek authorities.": [],
+    "After the war, Jantzen received his Ph.D.": [
+        [
+            15,
+            22,
+            [
+                "Canteen",
+                "Jansen",
+                "Janssen"
+            ]
+        ]
+    ],
+    "from the university in Marburg in 1953.</p>": [
+        [
+            0,
+            4,
+            [
+                "From"
+            ]
+        ]
+    ]
+}

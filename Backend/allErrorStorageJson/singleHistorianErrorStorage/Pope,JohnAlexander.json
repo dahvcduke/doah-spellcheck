@@ -1,0 +1,44 @@
+{
+    "<p>Museum director and historian of Chinese and Japanese art.": [],
+    "Pope received a Ph.D.": [],
+    "in Chinese studies and Fine Arts from Harvard University in 1955.": [
+        [
+            0,
+            2,
+            [
+                "In"
+            ]
+        ]
+    ],
+    "He also studied European collections of Chinese art at the Courtald Institute of Art in London, and the Harvard-Yenching Institute.": [
+        [
+            59,
+            67,
+            [
+                "Courtyard",
+                "Courted",
+                "Courtly",
+                "Courtland"
+            ]
+        ],
+        [
+            104,
+            120,
+            [
+                "Harvard-Benching"
+            ]
+        ]
+    ],
+    "After spending three years as a lecturer of Chinese art at Columbia University, Pope was hired as a research associate at the Freer Gallery of Art in Washgington, D. C., and was appointed its director in 1962.": [
+        [
+            150,
+            161,
+            [
+                "Washington"
+            ]
+        ]
+    ],
+    "He published several books, articles, and exhibition catalogs on Chinese blue- and-white vase painting, and worked to develop the museum's collections of blue-and-white porcelain from the Yuan (1279-1368) and Ming (1368-1644) periods.": [],
+    "Pope also expanded the Freer's collection of Japanese porcelain produced during the Edo (1600-1868) period.": [],
+    "In the last decade of his life, Pope worked as a research curator of Far Eastern art from 1971 until his death in 1982.</p>": []
+}

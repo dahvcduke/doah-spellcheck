@@ -1,0 +1,23 @@
+{
+    "<p>Vasari emulator, flemish</p>": [
+        [
+            3,
+            9,
+            [
+                "Va sari"
+            ]
+        ],
+        [
+            20,
+            27,
+            [
+                "Flemish",
+                "blemish",
+                "flesh",
+                "Fleming",
+                "famish",
+                "fetish"
+            ]
+        ]
+    ]
+}

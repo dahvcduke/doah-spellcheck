@@ -1,0 +1,31 @@
+{
+    "<p>Zigrosser hired Kneeland McNulty, an Elmer Adler proteg\u00e9, at the Print Collection at the Philadelphia Museum of Art.</p>": [
+        [
+            3,
+            12,
+            [
+                "Grosser"
+            ]
+        ],
+        [
+            19,
+            27,
+            [
+                "Knee land",
+                "Kneel and"
+            ]
+        ],
+        [
+            52,
+            59,
+            [
+                "prot\u00e9g\u00e9",
+                "protege",
+                "prot\u00e9g\u00e9s",
+                "proteges",
+                "prot\u00e9g\u00e9e",
+                "protegee"
+            ]
+        ]
+    ]
+}

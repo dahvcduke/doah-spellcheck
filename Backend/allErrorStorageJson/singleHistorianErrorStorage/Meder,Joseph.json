@@ -1,0 +1,37 @@
+{
+    "<p>Director of the Albertina museum, 1905-23.": [],
+    "He was born in Lobeditz, which is present day Zlovedice, Czech Republic.": [
+        [
+            15,
+            23,
+            [
+                "Lobe ditz"
+            ]
+        ],
+        [
+            46,
+            55,
+            [
+                "Lovelace",
+                "Lovesick"
+            ]
+        ]
+    ],
+    "From 1884 onward he was active in the Vienna University library; in 1889 he was placed in charge of the Erzherzog Albrechts von Habsburg collection at the Albertina; between 1905-23 he was Director of the Albertina.</p>": [
+        [
+            104,
+            113,
+            [
+                "Herzog"
+            ]
+        ],
+        [
+            114,
+            123,
+            [
+                "Albrecht's",
+                "Albrecht"
+            ]
+        ]
+    ]
+}

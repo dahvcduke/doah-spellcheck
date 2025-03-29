@@ -1,0 +1,84 @@
+{
+    "<p>Scholar of Italian Renaissance artists, especially Michelangelo.": [],
+    "Dussler attended the university in Munich.": [
+        [
+            0,
+            7,
+            [
+                "Dossier",
+                "Duller",
+                "Kessler",
+                "Duster",
+                "Tussle",
+                "Rustler"
+            ]
+        ]
+    ],
+    "He served as a soldier in World War I. Afterward, Dussler worked in the Bavarian State Museums.": [
+        [
+            50,
+            57,
+            [
+                "Dossier",
+                "Duller",
+                "Kessler",
+                "Duster",
+                "Tussle",
+                "Rustler"
+            ]
+        ]
+    ],
+    "He received a scholarship from the German Institute in Florence, completing his habilitation in 1929, qualifying as a lecturer at the Technische Hochschule in Munich.": [
+        [
+            80,
+            92,
+            [
+                "rehabilitation",
+                "habitation",
+                "facilitation",
+                "debilitation",
+                "habilitating"
+            ]
+        ],
+        [
+            134,
+            144,
+            [
+                "Technical",
+                "Technique",
+                "Technics",
+                "Technic",
+                "Technicize"
+            ]
+        ]
+    ],
+    "He advanced to associate professor in 1934.": [],
+    "With the rise of the Nazis in Germany, Dussler became a National Socialist (Nazi) denouncing Jews working in Bavarian academics, among them his colleague <a href=\"/mayera\">August Liebmann Mayer</a>.": [
+        [
+            39,
+            46,
+            [
+                "Dossier",
+                "Duller",
+                "Kessler",
+                "Duster",
+                "Tussle",
+                "Rustler"
+            ]
+        ]
+    ],
+    "After World War II, Dussler was appointed full professor in 1947.</p>": [
+        [
+            20,
+            27,
+            [
+                "Dossier",
+                "Duller",
+                "Kessler",
+                "Duster",
+                "Tussle",
+                "Rustler"
+            ]
+        ]
+    ]
+}

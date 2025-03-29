@@ -1,0 +1,23 @@
+{
+    "<p>Wrote <em>Dizionario degli architetti, scultori, pittori, intagliatori</em> (1830-33).": [],
+    "Born in&nbsp;Parturo, Italy near Como.</p>": [
+        [
+            5,
+            12,
+            [
+                "inns",
+                "INBS",
+                "INSP",
+                "inanest",
+                "&nbsp;"
+            ]
+        ],
+        [
+            13,
+            20,
+            [
+                "Arturo"
+            ]
+        ]
+    ]
+}

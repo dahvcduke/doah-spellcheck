@@ -1,0 +1,24 @@
+{
+    "<p>Greek art scholar; social history; de Ridder may only be a social historian, and Deonna may be art historian</p>": [
+        [
+            41,
+            47,
+            [
+                "Rider",
+                "Ridden",
+                "Bidder",
+                "Rudder",
+                "Redder",
+                "Kidder"
+            ]
+        ],
+        [
+            84,
+            90,
+            [
+                "Donna",
+                "Deanna"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,105 @@
+{
+    "<p>Priest and historian of French art.": [],
+    "Requin traveled on foot throughout Provence, documenting the lives of artists who worked in the area.": [
+        [
+            0,
+            6,
+            [
+                "Sequin"
+            ]
+        ]
+    ],
+    "He used archival material and notorial registers to collect information, particularly on artists and techniques of the 15th century.": [
+        [
+            30,
+            38,
+            [
+                "notarial"
+            ]
+        ]
+    ],
+    "In 1889, Requin completed a historiography of 15th century painters in Avignon.": [
+        [
+            9,
+            15,
+            [
+                "Sequin"
+            ]
+        ]
+    ],
+    "The historiography included artist Enguerrand Quarton, who painted <em>Coronation of the Virgin by the Holy Trinity</em>.": [
+        [
+            35,
+            45,
+            [
+                "Krugerrand"
+            ]
+        ],
+        [
+            46,
+            53,
+            [
+                "Quarto",
+                "Quartos",
+                "Quart on"
+            ]
+        ]
+    ],
+    "This painting gained Quarton a <em>prix-fait</em>, which allowed him to paint commissions witnessed by a notary.": [
+        [
+            21,
+            28,
+            [
+                "Quarto",
+                "Quartos",
+                "Quart on"
+            ]
+        ]
+    ],
+    "Requin also studied the works of contemporary sculptors and painters with the help of Paul Arbaud, a collector from Aix.": [
+        [
+            0,
+            6,
+            [
+                "Sequin"
+            ]
+        ],
+        [
+            91,
+            97,
+            [
+                "Arnaud",
+                "Ar baud"
+            ]
+        ],
+        [
+            116,
+            119,
+            [
+                "AIX",
+                "Air",
+                "Six",
+                "Aid",
+                "Mix",
+                "Fix"
+            ]
+        ]
+    ],
+    "After suffering from a stroke in 1912, Requin's manuscripts were collected by the Biblioth\u00e8que Municipale in Provence, and other public archives in the region for scholarly study.</p>": [
+        [
+            39,
+            45,
+            [
+                "Sequin"
+            ]
+        ],
+        [
+            95,
+            105,
+            [
+                "Municipal",
+                "Municipals"
+            ]
+        ]
+    ]
+}

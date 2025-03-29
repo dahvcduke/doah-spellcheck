@@ -1,0 +1,41 @@
+{
+    "<p>Specialist in ancient Greek art.": [],
+    "Professor of Archaeology at University of Frankfurt, 1914-1931.": [],
+    "He was born in&nbsp;Stolp, Pomerania, Germany, which is present-day Slupsk, Poland.&nbsp;In 1939 he published <em>Die Archaischen Marmorbildwerke der Akropolis</em> with <a href=\"/langlotze\">Ernst Langlotz</a>.</p>": [
+        [
+            12,
+            19,
+            [
+                "inns",
+                "INBS",
+                "INSP",
+                "inanest",
+                "&nbsp;"
+            ]
+        ],
+        [
+            20,
+            25,
+            [
+                "Stop",
+                "Stole",
+                "STOL",
+                "Stomp",
+                "Stoop",
+                "Stoup"
+            ]
+        ],
+        [
+            68,
+            74,
+            [
+                "Slips",
+                "Slums",
+                "Slaps",
+                "Slugs",
+                "Soups",
+                "Slurs"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "<p>German archaeologist and art historian of sarcophogial sculpture.": [
+        [
+            45,
+            57,
+            [
+                "sarcophagi"
+            ]
+        ]
+    ],
+    "Matz was the uncle of <a href=\"/matzf\">Friedrich Matz (1890-1974)</a>, the German authority on Mycenae.</p>": [
+        [
+            0,
+            4,
+            [
+                "Mate",
+                "Matt",
+                "Math",
+                "Mat",
+                "Mats",
+                "Katz"
+            ]
+        ]
+    ]
+}
