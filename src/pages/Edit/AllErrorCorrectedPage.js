@@ -180,12 +180,20 @@ const AllErrorCorrectedPage = () => {
                 <option value="pdf">pdf</option>
               </select>
             </label>
-            <button
-              style={{ fontSize: "30px", backgroundColor: "#DEA93D", padding: "10px 20px", borderRadius: "5px", border: "none", cursor: "pointer", fontWeight: "bold", marginTop: "20px" }}
-              onClick={handleCancelExport}
-            >
-              Cancel
-            </button>
+            <div style={{ marginTop: "20px", display: "flex", justifyContent: "center", gap: "20px" }}>
+              <button
+                style={{ fontSize: "30px", backgroundColor: "#DEA93D", padding: "10px 20px", borderRadius: "5px", border: "none", cursor: "pointer", fontWeight: "bold" }}
+                onClick={handleSaveExport}
+              >
+                Save
+              </button>
+              <button
+                style={{ fontSize: "30px", backgroundColor: "#DEA93D", padding: "10px 20px", borderRadius: "5px", border: "none", cursor: "pointer", fontWeight: "bold" }}
+                onClick={handleCancelExport}
+              >
+                Cancel
+              </button>
+            </div>
           </div>
         </div>
       )}

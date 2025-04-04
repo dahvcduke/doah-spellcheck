@@ -69,6 +69,15 @@ const EditErrorsPage = () => {
     }
   };
 
+  const handleSkip = () => {
+    if (errorIndex < errorList.length - 1) {
+      setErrorIndex((prev) => prev + 1);
+      setManualEdit("");
+    } else {
+      navigate("/all-error-corrected", { state: { selectedDocument } });
+    }
+  };
+
   return (
     <div style={{ backgroundColor: "#F0DFC3", fontFamily: "Proxima Nova", minHeight: "100vh", position: "relative", padding: "50px 100px", display: "flex", flexDirection: "column" }}>
       <h1 style={{ fontSize: "50px", fontWeight: "bold", color: "#A6785E", textAlign: "center", marginBottom: "50px" }}>Edit Document</h1>
@@ -98,6 +107,14 @@ const EditErrorsPage = () => {
               Manual edit:
               <input type="text" value={manualEdit} onChange={(e) => setManualEdit(e.target.value)} style={{ marginLeft: "10px", padding: "5px 10px", borderRadius: "10px", border: "1px solid #A6785E" }} />
             </label>
+            <div style={{ marginTop: "10px", textAlign: "right" }}>
+              <button
+                onClick={handleSkip}
+                style={{ fontSize: "20px", backgroundColor: "#DEA93D", color: "#50464E", padding: "8px 20px", borderRadius: "8px", border: "none", cursor: "pointer", fontWeight: "bold" }}
+              >
+                Skip
+              </button>
+            </div>
           </div>
         </div>
       </div>
