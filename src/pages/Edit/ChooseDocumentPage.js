@@ -7,7 +7,6 @@ const ChooseDocumentPage = () => {
   const [selectedDocument, setSelectedDocument] = useState(null);
   const [uploadedDocuments, setUploadedDocuments] = useState([]);
 
-  // Load uploaded filenames from localStorage on mount
   useEffect(() => {
     const storedDocs = JSON.parse(localStorage.getItem("uploadedFilenames")) || [];
     setUploadedDocuments(storedDocs);
