@@ -69,21 +69,6 @@ const LandingPage = () => {
         >
           Edit Document
         </button>
-        <button
-          style={{
-            fontSize: "40px",
-            backgroundColor: "#DEA93D",
-            color: "#50464E",
-            padding: "20px 60px",
-            borderRadius: "15px",
-            border: "none",
-            cursor: "pointer",
-            fontWeight: "bold",
-          }}
-          onClick={() => navigate("/data-storage")}
-        >
-          Data Storage
-        </button>
       </div>
       <p
         style={{
