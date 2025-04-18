@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/doah-spellcheck/static/css/main.0a0b3d1d.css",
-    "main.js": "/doah-spellcheck/static/js/main.9215a086.js",
-    "static/js/453.dfdc9e72.chunk.js": "/doah-spellcheck/static/js/453.dfdc9e72.chunk.js",
-    "index.html": "/doah-spellcheck/index.html",
-    "main.0a0b3d1d.css.map": "/doah-spellcheck/static/css/main.0a0b3d1d.css.map",
-    "main.9215a086.js.map": "/doah-spellcheck/static/js/main.9215a086.js.map",
-    "453.dfdc9e72.chunk.js.map": "/doah-spellcheck/static/js/453.dfdc9e72.chunk.js.map"
+    "main.css": "./static/css/main.0a0b3d1d.css",
+    "main.js": "./static/js/main.ab19ff74.js",
+    "static/js/453.dfdc9e72.chunk.js": "./static/js/453.dfdc9e72.chunk.js",
+    "index.html": "./index.html",
+    "main.0a0b3d1d.css.map": "./static/css/main.0a0b3d1d.css.map",
+    "main.ab19ff74.js.map": "./static/js/main.ab19ff74.js.map",
+    "453.dfdc9e72.chunk.js.map": "./static/js/453.dfdc9e72.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0a0b3d1d.css",
-    "static/js/main.9215a086.js"
+    "static/js/main.ab19ff74.js"
   ]
 }
