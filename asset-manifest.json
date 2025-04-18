@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/doah-spellcheck/static/css/main.0a0b3d1d.css",
+    "main.js": "/doah-spellcheck/static/js/main.9215a086.js",
+    "static/js/453.dfdc9e72.chunk.js": "/doah-spellcheck/static/js/453.dfdc9e72.chunk.js",
+    "index.html": "/doah-spellcheck/index.html",
+    "main.0a0b3d1d.css.map": "/doah-spellcheck/static/css/main.0a0b3d1d.css.map",
+    "main.9215a086.js.map": "/doah-spellcheck/static/js/main.9215a086.js.map",
+    "453.dfdc9e72.chunk.js.map": "/doah-spellcheck/static/js/453.dfdc9e72.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a0b3d1d.css",
+    "static/js/main.9215a086.js"
+  ]
+}
