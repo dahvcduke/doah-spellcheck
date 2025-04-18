@@ -44,6 +44,11 @@ const AllErrorCorrectedPage = () => {
     setShowExportPopup(false);
   };
 
+  /*
+  // Build fails due to a value being assigned but never used
+  // I've left this commented out as I'm not fully familiar with the project
+  //  and maybe the below function was supposed to be used somewhere..?
+  // In general, we want to avoid committing unused code -gb
   const applyCorrections = (sentence, corrections) => {
     let result = "";
     let lastIndex = 0;
@@ -58,6 +63,7 @@ const AllErrorCorrectedPage = () => {
     result += sentence.slice(lastIndex);
     return result;
   };
+  */
 
   const handleSaveExport = () => {
     const originalJsonRaw = localStorage.getItem("originalJson");
