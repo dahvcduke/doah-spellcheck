@@ -2,6 +2,33 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "../App.css";
 
+// ✅ Updated helper function
+function applyCorrectionsToAll(original, edited) {
+  const correctedSentences = [];
+
+  for (const [sentence] of Object.entries(original)) {
+    const value = edited[sentence];
+
+    let correctedSentence = sentence;
+
+    if (Array.isArray(value)) {
+      // Sort replacements in reverse order to preserve index integrity
+      const replacements = [...value].sort((a, b) => b.start - a.start);
+
+      for (const change of replacements) {
+        const { start, end, replacement } = change;
+        correctedSentence =
+          correctedSentence.slice(0, start) + replacement + correctedSentence.slice(end);
+      }
+    }
+
+    correctedSentences.push(correctedSentence);
+  }
+
+  return correctedSentences.join(" ");
+}
+
+
 const AllErrorCorrectedPage = () => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -13,6 +40,7 @@ const AllErrorCorrectedPage = () => {
   const [showExportPopup, setShowExportPopup] = useState(false);
   const [fileName, setFileName] = useState("corrected_document");
   const [errorCount, setErrorCount] = useState(0);
+  const [correctedSentences, setCorrectedSentences] = useState("");
 
   useEffect(() => {
     const stored = localStorage.getItem("uploadedJson");
@@ -20,11 +48,43 @@ const AllErrorCorrectedPage = () => {
       const json = JSON.parse(stored);
       let totalErrors = 0;
       Object.values(json).forEach((errors) => {
-        totalErrors += errors.length;
+        if (Array.isArray(errors)) totalErrors += errors.length;
       });
       setErrorCount(totalErrors);
     }
   }, []);
+
+  useEffect(() => {
+    const originalJsonRaw = localStorage.getItem("originalJson");
+    const editedJsonRaw = localStorage.getItem("editedJson");
+
+    if (originalJsonRaw && editedJsonRaw) {
+      try {
+        const originalJson = JSON.parse(originalJsonRaw);
+        const editedJson = JSON.parse(editedJsonRaw);
+
+        const cleaned = applyCorrectionsToAll(originalJson, editedJson);
+        setCorrectedSentences(cleaned);
+      } catch (e) {
+        console.error("Failed to parse JSON:", e);
+      }
+    }
+  }, []);
+
+  const paragraphRef = React.useRef(null);
+
+  const handleCopy = () => {
+    if (paragraphRef.current) {
+      const text = paragraphRef.current.innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Cleaned document copied to clipboard!");
+      }).catch((err) => {
+        console.error("Copy failed:", err);
+      });
+    }
+  };
+
+
 
   const handleBack = () => {
     navigate("/edit-error", {
@@ -44,51 +104,30 @@ const AllErrorCorrectedPage = () => {
     setShowExportPopup(false);
   };
 
-  /*
-  // Build fails due to a value being assigned but never used
-  // I've left this commented out as I'm not fully familiar with the project
-  //  and maybe the below function was supposed to be used somewhere..?
-  // In general, we want to avoid committing unused code -gb
-  const applyCorrections = (sentence, corrections) => {
-    let result = "";
-    let lastIndex = 0;
-    const sorted = [...corrections].sort((a, b) => a.start - b.start);
-
-    for (const { start, end, replacement } of sorted) {
-      result += sentence.slice(lastIndex, start);
-      result += replacement;
-      lastIndex = end;
-    }
-
-    result += sentence.slice(lastIndex);
-    return result;
-  };
-  */
-
   const handleSaveExport = () => {
     const originalJsonRaw = localStorage.getItem("originalJson");
     const editedJsonRaw = localStorage.getItem("editedJson");
-  
+
     if (!originalJsonRaw || !editedJsonRaw) {
       alert("Missing original or edited data in localStorage.");
       return;
     }
-  
+
     const originalJson = JSON.parse(originalJsonRaw);
     const editedJson = JSON.parse(editedJsonRaw);
-  
+
     const output = {};
-  
+
     Object.entries(originalJson).forEach(([sentence, originalCorrections]) => {
       const corrections = editedJson[sentence];
-  
+
       if (Array.isArray(corrections) && corrections.length > 0) {
         output[sentence] = corrections;
       } else {
         output[sentence] = sentence;
       }
     });
-  
+
     const fileContent = JSON.stringify(output, null, 2);
     const blob = new Blob([fileContent], { type: "application/json" });
     const link = document.createElement("a");
@@ -99,7 +138,7 @@ const AllErrorCorrectedPage = () => {
     document.body.removeChild(link);
     URL.revokeObjectURL(link.href);
     setShowExportPopup(false);
-  };  
+  };
 
   return (
     <div
@@ -146,10 +185,70 @@ const AllErrorCorrectedPage = () => {
           marginTop: "50px",
         }}
       >
-        <button style={buttonStyle} onClick={handleBack}>Back</button>
-        <button style={buttonStyle} onClick={handleHome}>Home</button>
-        <button style={buttonStyle} onClick={handleExportClick}>Export</button>
+        <button style={buttonStyle} onClick={handleBack}>
+          Back
+        </button>
+        <button style={buttonStyle} onClick={handleHome}>
+          Home
+        </button>
+        <button style={buttonStyle} onClick={handleExportClick}>
+          Export
+        </button>
       </div>
+
+      {/* Cleaned paragraph display */}
+      <div
+        style={{
+          background: "white",
+          padding: "20px",
+          borderRadius: "10px",
+          marginTop: "50px",
+          position: "relative",
+        }}
+      >
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <h2
+            style={{
+              fontSize: "30px",
+              marginBottom: "20px",
+              color: "#50464E",
+            }}
+          >
+            Cleaned Document
+          </h2>
+          <p
+            style={{
+              fontSize: "19px",
+              marginBottom: "10px",
+              fontWeight: "bold"
+            }}
+          >
+            Highlight and copy the edited article content below to your own file editor.
+          </p>
+          <button
+            onClick={handleCopy}
+            style={{
+              fontSize: "16px",
+              backgroundColor: "#DEA93D",
+              color: "#50464E",
+              padding: "8px 16px",
+              borderRadius: "8px",
+              border: "none",
+              cursor: "pointer",
+              fontWeight: "bold",
+            }}
+          >
+            Copy to Clipboard
+          </button>
+        </div>
+        <p
+          ref={paragraphRef}
+          style={{ fontSize: "20px", lineHeight: "1.6", color: "#50464E" }}
+        >
+          {correctedSentences}
+        </p>
+      </div>
+
 
       {showExportPopup && (
         <div style={popupOverlayStyle}>
@@ -171,8 +270,12 @@ const AllErrorCorrectedPage = () => {
               </select>
             </label>
             <div style={popupButtonRowStyle}>
-              <button style={popupButtonStyle} onClick={handleCancelExport}>Cancel</button>
-              <button style={popupButtonStyle} onClick={handleSaveExport}>Save</button>
+              <button style={popupButtonStyle} onClick={handleCancelExport}>
+                Cancel
+              </button>
+              <button style={popupButtonStyle} onClick={handleSaveExport}>
+                Save
+              </button>
             </div>
           </div>
         </div>
