@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../App.css";
 
 const LandingPage = () => {
   const navigate = useNavigate();
+  
+  useEffect(() => {
+    // Clear session-specific storage when user hits the homepage
+    localStorage.removeItem("uploadedJson");
+    localStorage.removeItem("originalJson");
+    localStorage.removeItem("editedJson");
+    localStorage.removeItem("uploadedFilenames");
+  }, []);
 
   return (
     <div
