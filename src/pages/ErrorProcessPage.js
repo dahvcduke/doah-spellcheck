@@ -1,39 +1,33 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../App.css";
 
 const ErrorProcessPage = () => {
   const navigate = useNavigate();
-  const location = useLocation();
-  const { selectedDocument } = location.state || { selectedDocument: "Document.json" };
-
-  const [errorCount, setErrorCount] = useState(0);
+  const [fileErrors, setFileErrors] = useState({});
 
   useEffect(() => {
     const jsonString = localStorage.getItem("uploadedJson");
+    if (!jsonString) return;
 
-    if (jsonString) {
-      try {
-        const jsonData = JSON.parse(jsonString);
-        let totalErrors = 0;
+    try {
+      const allJsons = JSON.parse(jsonString);
+      const counts = {};
 
-        for (const entry of Object.values(jsonData)) {
-          if (Array.isArray(entry)) {
-            totalErrors += entry.length;
-          }
-        }
+      Object.entries(allJsons).forEach(([filename, fileData]) => {
+        let count = 0;
+        Object.values(fileData).forEach((arr) => {
+          if (Array.isArray(arr)) count += arr.length;
+        });
+        counts[filename] = count;
+      });
 
-        setErrorCount(totalErrors);
-      } catch (err) {
-        console.error("Failed to parse uploadedJson:", err);
-        setErrorCount(0);
-      }
+      setFileErrors(counts);
+    } catch (err) {
+      console.error("Failed to parse uploadedJson:", err);
     }
   }, []);
 
-  const handleNext = () => {
-    navigate("/edit-error", { state: { selectedDocument } });
-  };
 
   const handleBack = () => {
     navigate("/choose-document");
@@ -63,23 +57,29 @@ const ErrorProcessPage = () => {
         Error Processing
       </h1>
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          fontSize: "30px",
-          color: "#50464E",
-          marginBottom: "50px",
-        }}
-      >
-        <p>Document: {selectedDocument}</p>
-        <p>{errorCount} error{errorCount !== 1 ? "s" : ""} found</p>
+      <div style={{ marginBottom: "40px" }}>
+        {Object.keys(fileErrors).length === 0 ? (
+          <p style={{ fontSize: "24px", color: "#50464E" }}>No uploaded files found.</p>
+        ) : (
+          <ul style={{ listStyle: "none", padding: 0, fontSize: "24px", color: "#50464E" }}>
+            {Object.entries(fileErrors).map(([filename, count]) => (
+              <li key={filename} style={{ marginBottom: "20px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                <span><strong>{filename}</strong>: {count} error{count !== 1 ? "s" : ""}</span>
+                <button
+                  style={{ ...buttonStyle, fontSize: "20px", padding: "8px 20px" }}
+                  onClick={() => navigate("/edit-error", { state: { selectedDocument: filename } })}
+                >
+                  Start
+                </button>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
+
 
       <div style={{ display: "flex", justifyContent: "flex-end", gap: "20px" }}>
         <button style={buttonStyle} onClick={handleBack}>Back</button>
-        <button style={buttonStyle} onClick={handleNext}>Start</button>
       </div>
     </div>
   );

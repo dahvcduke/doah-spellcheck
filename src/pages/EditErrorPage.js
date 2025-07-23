@@ -15,9 +15,13 @@ const EditErrorsPage = () => {
 
   useEffect(() => {
     const jsonString = localStorage.getItem("uploadedJson");
-    if (!jsonString) return;
+    if (!jsonString || !selectedDocument) return;
 
-    const json = JSON.parse(jsonString);
+    const allJsons = JSON.parse(jsonString);
+    const json = allJsons[selectedDocument];
+
+    if (!json) return;
+
     const list = [];
 
     Object.entries(json).forEach(([sentence, errors]) => {
@@ -34,11 +38,15 @@ const EditErrorsPage = () => {
     });
 
     setErrorList(list);
-  }, []);
+  }, [selectedDocument]);
+
 
   useEffect(() => {
-    localStorage.setItem("editedJson", JSON.stringify(editedSentences));
-  }, [editedSentences]);
+    const existing = JSON.parse(localStorage.getItem("editedJson")) || {};
+    const updated = { ...existing, [selectedDocument]: editedSentences };
+    localStorage.setItem("editedJson", JSON.stringify(updated));
+  }, [editedSentences, selectedDocument]);
+
 
   const currentError = errorList[errorIndex];
 
@@ -156,7 +164,14 @@ const EditErrorsPage = () => {
     ));
   };
 
-  if (!currentError) return null;
+  if (!currentError) {
+    return (
+      <div style={{ padding: "50px", fontSize: "24px" }}>
+        No errors found for <strong>{selectedDocument}</strong>.
+      </div>
+    );
+  }
+
 
   return (
     <div style={{ backgroundColor: "#F0DFC3", fontFamily: "Proxima Nova", minHeight: "100vh", padding: "50px 100px", display: "flex", flexDirection: "column" }}>

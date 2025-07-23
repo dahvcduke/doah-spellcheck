@@ -44,15 +44,20 @@ const AllErrorCorrectedPage = () => {
 
   useEffect(() => {
     const stored = localStorage.getItem("uploadedJson");
-    if (stored) {
-      const json = JSON.parse(stored);
-      let totalErrors = 0;
-      Object.values(json).forEach((errors) => {
-        if (Array.isArray(errors)) totalErrors += errors.length;
-      });
-      setErrorCount(totalErrors);
+    if (stored && selectedDocument) {
+      const allJson = JSON.parse(stored);
+      const json = allJson[selectedDocument];
+
+      if (json) {
+        let totalErrors = 0;
+        Object.values(json).forEach((arr) => {
+          if (Array.isArray(arr)) totalErrors += arr.length;
+        });
+        setErrorCount(totalErrors);
+      }
     }
-  }, []);
+  }, [selectedDocument]);
+
 
   useEffect(() => {
     const originalJsonRaw = localStorage.getItem("originalJson");
@@ -60,16 +65,21 @@ const AllErrorCorrectedPage = () => {
 
     if (originalJsonRaw && editedJsonRaw) {
       try {
-        const originalJson = JSON.parse(originalJsonRaw);
-        const editedJson = JSON.parse(editedJsonRaw);
+        const originalJsonAll = JSON.parse(originalJsonRaw);
+        const editedJsonAll = JSON.parse(editedJsonRaw);
 
-        const cleaned = applyCorrectionsToAll(originalJson, editedJson);
-        setCorrectedSentences(cleaned);
+        const originalJson = originalJsonAll[selectedDocument];
+        const editedJson = editedJsonAll[selectedDocument];
+
+        if (originalJson && editedJson) {
+          const cleaned = applyCorrectionsToAll(originalJson, editedJson);
+          setCorrectedSentences(cleaned);
+        }
       } catch (e) {
         console.error("Failed to parse JSON:", e);
       }
     }
-  }, []);
+  }, [selectedDocument]);
 
   const paragraphRef = React.useRef(null);
 
@@ -113,12 +123,20 @@ const AllErrorCorrectedPage = () => {
       return;
     }
 
-    const originalJson = JSON.parse(originalJsonRaw);
-    const editedJson = JSON.parse(editedJsonRaw);
+    const originalJsonAll = JSON.parse(originalJsonRaw);
+    const editedJsonAll = JSON.parse(editedJsonRaw);
+
+    const originalJson = originalJsonAll[selectedDocument];
+    const editedJson = editedJsonAll[selectedDocument];
+
+    if (!originalJson || !editedJson) {
+      alert("Missing data for selected document.");
+      return;
+    }
 
     const output = {};
 
-    Object.entries(originalJson).forEach(([sentence, originalCorrections]) => {
+    Object.entries(originalJson).forEach(([sentence]) => {
       const corrections = editedJson[sentence];
 
       if (Array.isArray(corrections) && corrections.length > 0) {
@@ -160,7 +178,7 @@ const AllErrorCorrectedPage = () => {
           marginBottom: "50px",
         }}
       >
-        Edit Document
+        Review Edited Document
       </h1>
 
       <div
@@ -183,10 +201,14 @@ const AllErrorCorrectedPage = () => {
           justifyContent: "flex-end",
           gap: "25px",
           marginTop: "50px",
+          flexWrap: "wrap",
         }}
       >
+        <button style={buttonStyle} onClick={() => navigate("/error-process")}>
+          Back to All Files
+        </button>
         <button style={buttonStyle} onClick={handleBack}>
-          Back
+          Back to Editor
         </button>
         <button style={buttonStyle} onClick={handleHome}>
           Home
@@ -195,6 +217,7 @@ const AllErrorCorrectedPage = () => {
           Export
         </button>
       </div>
+
 
       {/* Cleaned paragraph display */}
       <div

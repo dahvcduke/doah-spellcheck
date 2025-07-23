@@ -5,6 +5,7 @@ import ChooseDocumentPage from "./pages/ChooseDocumentPage";
 import ErrorProcessPage from "./pages//ErrorProcessPage";
 import EditErrorPage from "./pages/EditErrorPage";
 import AllErrorCorrectedPage from "./pages/AllErrorCorrectedPage";
+import CreditPage from "./pages/CreditPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/error-process" element={<ErrorProcessPage />} />
         <Route path="/edit-error" element={<EditErrorPage />} />
         <Route path="/all-error-corrected" element={<AllErrorCorrectedPage />} />
+        <Route path="/about-credits" element={<CreditPage />} />
       </Routes>
     </HashRouter>
   );

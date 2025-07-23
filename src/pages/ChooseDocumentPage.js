@@ -21,31 +21,48 @@ const ChooseDocumentPage = () => {
   };
 
   const handleUpload = (event) => {
-    const file = event.target.files[0];
-    if (file) {
+    const files = Array.from(event.target.files).slice(0, 20); // increase limit if desired
+    const newUploadedDocs = [];
+    const newJsonMap = {};
+
+    let processedCount = 0;
+
+    // Get existing uploadedJson from localStorage (merge)
+    const existingJson = JSON.parse(localStorage.getItem("uploadedJson")) || {};
+
+    files.forEach((file) => {
       const reader = new FileReader();
-      reader.onload = (event) => {
+
+      reader.onload = (e) => {
         try {
-          const json = JSON.parse(event.target.result);
+          const json = JSON.parse(e.target.result);
+          newJsonMap[file.name] = json;
+          newUploadedDocs.push(file.name);
 
-          // ✅ FIXED: set originalJson and initialize empty editedJson
-          localStorage.setItem("uploadedJson", JSON.stringify(json));
-          localStorage.setItem("originalJson", JSON.stringify(json));
-          localStorage.setItem("editedJson", JSON.stringify({}));
+          processedCount++;
+          if (processedCount === files.length) {
+            const updatedFiles = [...new Set([...uploadedDocuments, ...newUploadedDocs])];
+            const mergedJson = { ...existingJson, ...newJsonMap };
 
-          const newFileName = file.name;
-          const updatedFiles = [...new Set([...uploadedDocuments, newFileName])];
-          setUploadedDocuments(updatedFiles);
-          localStorage.setItem("uploadedFilenames", JSON.stringify(updatedFiles));
+            setUploadedDocuments(updatedFiles);
+            localStorage.setItem("uploadedFilenames", JSON.stringify(updatedFiles));
+            localStorage.setItem("uploadedJson", JSON.stringify(mergedJson));
+            localStorage.setItem("originalJson", JSON.stringify(mergedJson));
 
-          setSelectedDocument(newFileName);
+            const editedJson = JSON.parse(localStorage.getItem("editedJson")) || {};
+            localStorage.setItem("editedJson", JSON.stringify(editedJson));
+
+            setSelectedDocument(newUploadedDocs[0]); // still select first for now
+          }
         } catch (error) {
-          alert("Invalid JSON file");
+          alert(`Invalid JSON in file: ${file.name}`);
         }
       };
+
       reader.readAsText(file);
-    }
+    });
   };
+
 
   return (
     <div
@@ -67,7 +84,7 @@ const ChooseDocumentPage = () => {
           marginBottom: "50px",
         }}
       >
-        Choose Your Document
+        Choose Up to 20 JSON Files
       </h1>
 
       <div
@@ -100,22 +117,37 @@ const ChooseDocumentPage = () => {
             type="file"
             style={{ display: "none" }}
             onChange={handleUpload}
+            accept=".json"
+            multiple
           />
         </label>
       </div>
 
-      {selectedDocument && (
-        <div
-          style={{
-            textAlign: "center",
-            fontSize: "28px",
-            color: "#50464E",
-            marginBottom: "40px",
-          }}
-        >
-          Selected Document: {selectedDocument}
+      {uploadedDocuments.length > 0 && (
+        <div style={{ marginBottom: "40px" }}>
+          <h2 style={{ textAlign: "center", color: "#50464E", fontSize: "28px" }}>
+            Uploaded Documents
+          </h2>
+          <ul style={{ listStyle: "none", padding: 0, fontSize: "22px", textAlign: "center" }}>
+            {uploadedDocuments.map((filename) => (
+              <li
+                key={filename}
+                onClick={() => setSelectedDocument(filename)}
+                style={{
+                  margin: "10px 0",
+                  cursor: "pointer",
+                  color: filename === selectedDocument ? "#DEA93D" : "#50464E",
+                  fontWeight: filename === selectedDocument ? "bold" : "normal",
+                  textDecoration: filename === selectedDocument ? "underline" : "none",
+                }}
+              >
+                {filename}
+              </li>
+            ))}
+          </ul>
         </div>
       )}
+
 
       <div
         style={{

@@ -29,11 +29,11 @@ const LandingPage = () => {
           marginBottom: "20px",
         }}
       >
-        Historian Dictionary
+        <i>Dictionary of Art Historian</i> Spell Check
       </h1>
       <p
         style={{
-          fontSize: "30px",
+          fontSize: "24px",
           color: "#50464E",
           textAlign: "center",
           maxWidth: "900px",
@@ -41,8 +41,8 @@ const LandingPage = () => {
           lineHeight: "1.5",
         }}
       >
-        The Dictionary Grammar and Spelling Checker is a Python-based tool designed to correct
-        common errors while recognizing foreign words, proper nouns, and specialized terms. With
+        This spell checker is an interface designed to correct common grammatical and syntactical 
+        errors while recognizing foreign words, proper nouns, and specialized terms. With
         sentence-level implementation and word-level focus separately managed, this program ensures
         accurate and context-aware corrections tailored for dictionary use.
       </p>
@@ -56,10 +56,10 @@ const LandingPage = () => {
       >
         <button
           style={{
-            fontSize: "40px",
+            fontSize: "30px",
             backgroundColor: "#DEA93D",
             color: "#50464E",
-            padding: "20px 60px",
+            padding: "10px 30px",
             borderRadius: "15px",
             border: "none",
             cursor: "pointer",
@@ -70,17 +70,21 @@ const LandingPage = () => {
           Edit Document
         </button>
       </div>
-      <p
-        style={{
-          fontSize: "20px",
-          color: "#50464E",
-          position: "absolute",
-          bottom: "20px",
-          right: "40px",
-        }}
-      >
-        Credit @Duke University
-      </p>
+        <button
+          style={{
+            fontSize: "20px",
+            backgroundColor: "#DEA93D",
+            color: "#50464E",
+            padding: "10px 30px",
+            borderRadius: "15px",
+            border: "none",
+            cursor: "pointer",
+            fontWeight: "bold",
+          }}
+          onClick={() => navigate("/about-credits")}
+        >
+          View Project Description and Credits
+        </button>
     </div>
   );
 };
