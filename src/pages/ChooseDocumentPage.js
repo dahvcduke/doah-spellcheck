@@ -9,6 +9,13 @@ const ChooseDocumentPage = () => {
 
   useEffect(() => {
     const storedDocs = JSON.parse(localStorage.getItem("uploadedFilenames")) || [];
+    if (storedDocs.length === 0) {
+      localStorage.removeItem("uploadedJson");
+      localStorage.removeItem("originalJson");
+      localStorage.removeItem("editedJson");
+      localStorage.removeItem("uploadedFilenames");
+    }
+
     setUploadedDocuments(storedDocs);
   }, []);
 
